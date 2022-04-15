@@ -1,0 +1,90 @@
+.welcome_bg
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    text-align: center;
+}
+
+/* Welcome内容部分 */
+@font-face {
+    font-family: Nintendo_like;
+    src: url(/GS_newlocation/Nintendo/new_fonts/Nintendo_like.ttf);
+}
+
+.welcome_words
+{
+    position: absolute;
+    font-size: 120px;
+    font-weight: 800;
+    font-family: Nintendo_like;
+    letter-spacing: 2px;
+    width: 60%;
+    height: 90%;
+    left: 20%;
+    top: 4%;
+}
+
+.word1
+{
+    position: absolute;
+    width: 79%;
+    left: 10.5%;
+    top: 0;
+    user-select: none;
+}
+
+.word2
+{
+    position: absolute;
+    width: 63.5%;
+    height: 30%;
+    top: 23%;
+    left: 15%;
+}
+
+.word2_head
+{
+    position: absolute;
+    width: 180px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.word2_name
+{
+    position: absolute;
+    left: 235px;
+    top: 30px;
+    user-select: none;
+}
+
+.welcome_logo
+{
+    position: absolute;
+    width: 70%;
+    left: 14%;
+    top: 52%;
+    user-select: none;
+}
+
+.word3
+{
+    position: absolute;
+    width: 43%;
+    left: 27.5%;
+    top: 75%;
+    user-select: none;
+}
+
+/*测试用，写完删除*/
+.test
+{
+    position: absolute;
+    width: 100px;
+    top: 10000px;
+}
