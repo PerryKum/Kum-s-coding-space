@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kum's Nintendo World</title>
+    <link rel="stylesheet" href="Nintendo_page.css"><!--对网页整体样式进行规划-->
+    <link rel="stylesheet" href="Nintendo_page_list.css"><!--对列表部分进行单独规划，主要为游戏机信息及区域样式-->
+    <link rel="stylesheet" href="Nintendo_page_innerlist.css"><!--对每项列表中的内容进行规划，主要为游戏的轮播图-->
+    <script src="Nintendo_page.js" type="text/javacript"></script>
+</head>
+<body>
+    <div class="Welcome">
+        <img src="/GS_newlocation/Nintendo/pics/headbg.png" class="welcome_bg">
+        <div class="welcome_words">
+            <div class="word1">Welcome to</div>
+            <div class="word2">
+                <span><img src="/GS_newlocation/Nintendo/pics/head.jpg" class="word2_head"></span><!--换头像改此处src，记得与index.html同步-->
+                <span class="word2_name">Kum's</span>
+            </div>
+            <img src="/GS_newlocation/Nintendo/pics/Nintendo_logo.png" class="word3_logo">
+            <div class="word4">World !</div>
+        </div>
+    </div>
+    <!--内容列表-->
+    <div class="NSL">
+        <div class="bg" id="bg_for_NSL">
+            <div class="bg_tpc">My First Handheld Console!</div>
+            <div class="bg_btm"><div class="bg_top"></div></div>
+            <div id="info_for_NSL">
+                <img src="/GS_newlocation/Nintendo/pics/items/NSL/NSL.png" id="pic_for_NSL">
+                <h1 id="name_for_NSL">Nintendo Switch Lite</h1>
+            </div>
+            <div class="games_area" id="games_area_for_NSL">
+                <button id="WIIUlast" class="btnleft"><</button>
+                <ul id="gamelist_for_NSL">
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Pokemon_sword.png" class="NSLgames" id="Pokemon_sword"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Gyakuten_Saiban.png" class="NSLgames" id="Gyakuten_Saiban"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Hades.png" class="NSLgames" id="Hades"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Mario_3d_World.png" class="NSLgames" id="Mario_3d_World"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/MHrise.png" class="NSLgames" id="MHrise"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Kirby_discovery.png" class="NSLgames" id="Kirby_discovery"></li>
+                </ul>
+                <button id="WIIUnext" class="btnright">></button>
+            </div>
+        </div>
+    </div>
+    <div class="WIIU">
+        <div class="bg" id="bg_for_WIIU">
+            <div class="bg_tpc">Having been retired!</div>
+            <div class="bg_btm"><div class="bg_top"></div></div>
+            <div id="info_for_WIIU">
+                <img src="/GS_newlocation/Nintendo/pics/items/WIIU/WIIU.png" id="pic_for_WIIU">
+                <h1 id="name_for_WIIU">WII U</h1>
+            </div>
+            <div class="games_area" id="games_area_for_WIIU">
+                <button id="WIIUlast" class="btnleft"><</button>
+                <ul id="gamelist_for_WIIU">
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Mario_Kart_8.png" class="WIIUgames" id="Mario_Kart_8"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Taiko.png" class="WIIUgames" id="Taiko"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Splatoon.png" class="WIIUgames" id="Splatoon"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Bayoneta2.png" class="WIIUgames" id="Bayoneta2"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Mario_Maker.png" class="WIIUgames" id="Super_Mario_Maker"></li>
+                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Captain_Kinopio.png" class="WIIUgames" id="Captain_Kinopio"></li>
+                </ul>
+                <button id="WIIUnext" class="btnright">></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
