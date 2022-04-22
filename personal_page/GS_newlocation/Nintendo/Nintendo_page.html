@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kum's Nintendo World</title>
     <link rel="stylesheet" href="Nintendo_page.css"><!--对网页整体样式进行规划-->
-    <link rel="stylesheet" href="Nintendo_page_list.css"><!--对列表部分进行单独规划，主要为游戏机信息及区域样式-->
+    <link rel="stylesheet" href="Nintendo_page_liststyle.css"><!--对列表部分进行单独规划，主要为游戏机信息及区域样式-->
     <link rel="stylesheet" href="Nintendo_page_innerlist.css"><!--对每项列表中的内容进行规划，主要为游戏的轮播图-->
-    <script src="Nintendo_page.js" type="text/javacript"></script>
+    <link rel="stylesheet" href="/Swiper/swiper-bundle.min.css"><!--引入Swiper模块CSS-->
 </head>
 <body>
     <div class="Welcome">
@@ -25,6 +25,7 @@
     </div>
     <!--内容列表-->
     <div class="NSL">
+        <!-- 样式 -->
         <div class="bg" id="bg_for_NSL">
             <div class="bg_tpc">My First Handheld Console!</div>
             <div class="bg_btm"><div class="bg_top"></div></div>
@@ -32,21 +33,12 @@
                 <img src="/GS_newlocation/Nintendo/pics/items/NSL/NSL.png" id="pic_for_NSL">
                 <h1 id="name_for_NSL">Nintendo Switch Lite</h1>
             </div>
-            <div class="games_area" id="games_area_for_NSL">
-                <button id="WIIUlast" class="btnleft"><</button>
-                <ul id="gamelist_for_NSL">
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Pokemon_sword.png" class="NSLgames" id="Pokemon_sword"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Gyakuten_Saiban.png" class="NSLgames" id="Gyakuten_Saiban"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Hades.png" class="NSLgames" id="Hades"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Mario_3d_World.png" class="NSLgames" id="Mario_3d_World"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/MHrise.png" class="NSLgames" id="MHrise"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/NSL/Games/Kirby_discovery.png" class="NSLgames" id="Kirby_discovery"></li>
-                </ul>
-                <button id="WIIUnext" class="btnright">></button>
-            </div>
         </div>
+        <!-- 轮播 -->
     </div>
+    
     <div class="WIIU">
+        <!--样式-->
         <div class="bg" id="bg_for_WIIU">
             <div class="bg_tpc">Having been retired!</div>
             <div class="bg_btm"><div class="bg_top"></div></div>
@@ -54,19 +46,30 @@
                 <img src="/GS_newlocation/Nintendo/pics/items/WIIU/WIIU.png" id="pic_for_WIIU">
                 <h1 id="name_for_WIIU">WII U</h1>
             </div>
-            <div class="games_area" id="games_area_for_WIIU">
-                <button id="WIIUlast" class="btnleft"><</button>
-                <ul id="gamelist_for_WIIU">
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Mario_Kart_8.png" class="WIIUgames" id="Mario_Kart_8"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Taiko.png" class="WIIUgames" id="Taiko"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Splatoon.png" class="WIIUgames" id="Splatoon"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Bayoneta2.png" class="WIIUgames" id="Bayoneta2"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Mario_Maker.png" class="WIIUgames" id="Super_Mario_Maker"></li>
-                    <li><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Captain_Kinopio.png" class="WIIUgames" id="Captain_Kinopio"></li>
-                </ul>
-                <button id="WIIUnext" class="btnright">></button>
+        </div>
+        <!--轮播-->
+        <div class="game_area" id="game_area_for_WIIU">
+            <button class="btnleft" id="WIIUprev"><</button>
+            <div class="swiper" id="game_swiper_for_WIIU">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Mario_Kart_8.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Taiko.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Mario_Maker.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Bayoneta2.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Splatoon.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Captain_Kinopio.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Mario_3d_World.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Mario_Bros_U.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Issac.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Madden_NFL.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Smash_Bros.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Zelda_BW.png" class="WIIUgames"></div>
+                </div>
             </div>
+            <button class="btnright" id="WIIUnext">></button>
         </div>
     </div>
 </body>
+<script src="/Swiper/swiper-bundle.min.js"></script><!--引入Swiper模块JS-->
+<script src="/GS_newlocation/Nintendo/Nintendo_page_innerlist.js"></script>
 </html>

@@ -5,25 +5,26 @@
     src: url(/GS_newlocation/Nintendo/new_fonts/Nintendo_like.ttf);
 }
 
-/* 对游戏展示区样式进行统一 */
-.games_area
+/* 这里对class="game_area"格式进行统一规范 */
+.game_area
 {
-    position: relative;
-    width: 68%;
+    position: absolute;
+    width: 67%;
     height: 230px;
-    left: 28.5%;
+    left: 29%;
 }
-/* 统一完了，在对每一项列表进行操作时仅需对其id设置top属性即可 */
+/* 规范完了，只需对每个操作对象单独设置top属性即可 */
 
-/* 对轮播按钮样式进行统一 */
+/* 这里对按钮样式进行统一 */
 .btnleft
 {
     position: absolute;
     width: 40px;
     height: 40px;
     background: rgba(255, 204, 0, 0.6);
-    left: -40px;
+    left: -55px;
     top: 100px;
+    user-select: none;
 }
 
 .btnright
@@ -34,109 +35,37 @@
     background: rgba(255, 204, 0, 0.6);
     left: 1030px;
     top: 100px;
+    user-select: none;
 }
 /* 统一完了 */
 
 /* NSL */
-/* NS卡带盒长宽比为34:21,这里对class="game"的卡带盒尺寸进行统一 */
-.NSLgames
-{
-    position: absolute;
-    width: 126px;  /* 5×21 */
-    height: 204px;  /* 5×34 */
-    user-select: none;
-}
-/* 统一完了，在对每一项列表进行操作时仅需对其id设置left属性即可 */
-
-#games_area_for_NSL
-{
-    top: 55px;
-}
-
-#gamelist_for_NSL
-{
-    position: absolute;
-    list-style-type: none;
-}
-
-#Pokemon_sword
-{
-    left: 30px;
-}
-
-#Gyakuten_Saiban
-{
-    left: 200px;
-}
-
-#Hades
-{
-    left: 370px;
-}
-
-#Mario_3d_World
-{
-    left: 540px;
-}
-
-#MHrise
-{
-    left: 710px;
-}
-
-#Kirby_discovery
-{
-    left: 880px;
-}
+/* NS卡带盒长宽比为34:21 */
 
 /* WIIU */
-/*  WIIU光驱盒长宽比为45:32,这里对class="WIIUgame"的光驱盒尺寸进行统一 */
+
+#game_area_for_WIIU
+{
+    top: 1165px;
+}
+
+#game_swiper_for_WIIU
+{
+    width: 100%;
+    height: 230px;
+}
+
+.swiper-wrapper
+{
+    width: 100%;
+    height: 100%;
+}
+
 .WIIUgames
 {
-    position: absolute;
-    width: 144px;  /* 4.5×32 */
-    height: 202.5px;  /* 4.5×45 */
+    /* WIIU卡带盒长宽比为45:32 */
+    width: 144px !important;  /* 32*4.5 */
+    height: 202.5px !important;  /* 45*4.5 */
+    top: 12px;
     user-select: none;
-}
-/* 统一完了，在对每一项列表进行操作时仅需对其id设置left属性即可 */
-
-#games_area_for_WIIU
-{
-    top: 55px;
-}
-
-#gamelist_for_WIIU
-{
-    position: absolute;
-    list-style-type: none;
-}
-
-#Mario_Kart_8
-{
-    left: 20px;
-}
-
-#Taiko
-{
-    left: 190px;
-}
-
-#Splatoon
-{
-    left: 360px;
-}
-
-#Bayoneta2
-{
-    left: 530px;
-}
-
-#Super_Mario_Maker
-{
-    left: 700px;
-}
-
-#Captain_Kinopio
-{
-    left: 870px;
 }
