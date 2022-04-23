@@ -1,0 +1,317 @@
+/*头部*/
+.heading_back
+{
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+}
+
+.heading_pic
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 35px;
+    top: 30%;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.heading_title
+{
+    position: relative;
+    font-size: 4em;
+    width: 300px;
+    left: 200px;
+    top: -45px;
+    font-weight: 300;
+    user-select: none;
+}
+/* 头部contact模块 */
+.contact_pikachu
+{
+    position: absolute;
+    width: 90px;
+    left: 92%;
+    top: -2px;
+    user-select: none;
+}
+
+/* 针对contact模块的超链接样式初步统一 */
+a
+{
+    text-decoration: none;
+    color: pink;
+}
+a:hover
+{
+    color: white;
+}
+/* 样式统一完了 */
+
+.contact_link
+{
+    
+    position: relative;
+    width: 100px;
+    left: 80%;
+    top: -105px;
+    font-weight: 100;
+    line-height: 180%;
+    list-style: none;
+    user-select: none;
+}
+
+/* 弹幕 */
+#bullet_screen
+{
+    position: absolute;
+    width: 60%;
+    height: 72px;
+    top: 12px;
+    left: 200px;
+}
+
+#bullet1
+{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 90px;
+    top: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 25px;
+    border: 3.5px solid rgb(255,215,0);
+    user-select: none;
+    float: left;
+}
+
+#bullet2
+{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 20px;
+    top: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 25px;
+    border: 3.5px solid rgb(255,215,0);
+    user-select: none;
+    float: left;
+}
+
+#bullet3
+{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    top: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 25px;
+    border: 3.5px solid rgb(255,215,0);
+    user-select: none;
+    float: left;
+}
+
+#bullet4
+{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 170px;
+    top: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 25px;
+    border: 3.5px solid rgb(255,215,0);
+    user-select: none;
+    float: left;
+}
+
+#bullet5
+{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 110px;
+    top: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 25px;
+    border: 3.5px solid rgb(255,215,0);
+    user-select: none;
+    float: left;
+}
+
+#bullet6
+{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 60px;
+    top: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 25px;
+    border: 3.5px solid rgb(255,215,0);
+    user-select: none;
+    float: left;
+}
+
+#bullet7
+{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 90px;
+    top: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 25px;
+    border: 3.5px solid rgb(255,215,0);
+    user-select: none;
+    float: left;
+}
+
+.bullet_screen_launcher
+{
+    position: relative;
+    width: 90px;
+    left: 73.5%;
+    top: 2px;
+    user-select: none;
+}
+/* 弹幕部分完了 */
+
+/* .bg_mhrise
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    opacity: 50%;
+    z-index: -2;
+} */
+
+/* 首页主体部分 */
+.main_body
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 750px;
+    z-index:-2;
+    user-select: none;
+}
+
+.main_body_left
+{
+    position: absolute;
+    background-color: brown;
+    left: 4%;
+    width: 29%;
+    height: 600px;
+    top: 100px;
+    border-radius: 10px;
+}
+
+.main_body_left_title
+{
+    position: absolute;
+    font-size: 2.8em;
+    font-weight: 500;
+    width: 70%;
+    left: 15%;
+    top: -100px;
+}
+
+.main_body_left_top_bg
+{
+    position: absolute;
+    width: 90%;
+    height: 180px;
+    left: 5%;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.main_body_left_mid_bg
+{
+    position: absolute;
+    width: 90%;
+    height: 180px;
+    left: 5%;
+    top: 210px;
+    border-radius: 10px;
+}
+
+.main_body_left_btm
+{
+    position: absolute;
+    width: 90%;
+    height: 180px;
+    left: 5%;
+    top: 400px;
+}
+
+.main_body_left_btm_left_bg
+{
+    position: absolute;
+    width: 32%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.main_body_left_btm_middle_bg
+{
+    position: absolute;
+    width: 32%;
+    left: 34%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.main_body_middle
+{
+    position: absolute;
+    background-color: brown;  /* 测试用，写完删除 */
+    left: 35.5%;
+    width: 29%;
+    height: 600px;
+    top: 100px;
+    border-radius: 10px;
+}
+
+.main_body_right
+{
+    position: absolute;
+    background-color: brown;  /* 测试用，写完删除 */
+    left: 67%;
+    width: 29%;
+    height: 600px;
+    top: 100px;
+    border-radius: 10px;
+}
+
+/*测试用，写完删除*/
+.test
+{
+    position: absolute;
+    width: 100px;
+    top: 10000px;
+}
