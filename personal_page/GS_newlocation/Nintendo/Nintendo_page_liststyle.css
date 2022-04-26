@@ -1,0 +1,152 @@
+/* 这里是对列表部分样式进行规范的单独一张css，方便修改 */
+
+@font-face {
+    font-family: Nintendo_like;
+    src: url(/GS_newlocation/Nintendo/new_fonts/Nintendo_like.ttf);
+}
+
+/* 利用class属性统一bg格式 */
+    .bg
+    {
+        position: absolute;
+        width: 100%;
+        height: 310px;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .bg_tpc
+    {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        background: rgb(0, 255, 229);
+        background-image: linear-gradient(-90deg,rgb(0, 110, 255),rgb(69, 243, 255));
+        /* 控制文字样式，随文字更改 */
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        user-select: none;
+    }
+    
+    .bg_btm
+    {
+        position: absolute;
+        width: 100%;
+        height: 280px;
+        background: rgb(221, 0, 255);
+        background-image: linear-gradient(90deg,rgb(255, 77, 243),rgb(153, 0, 255));
+        top: 30px;
+    }
+    
+    .bg_top
+    {
+        position: absolute;
+        width: 100%;
+        height: 230px;
+        background: rgb(255, 234, 0);
+        background-image: linear-gradient(120deg,rgb(255, 234, 0),rgb(255, 140, 0));
+        top: 25px;
+    }
+/* 统一完了，在对每一项列表进行操作时仅需对其id设置top属性即可 */
+        
+/* 利用id属性对每项单独部分进行排版 */
+/* NSL */
+#bg_for_NSL
+{
+    top: 780px;
+}
+
+#info_for_NSL
+{
+    position: absolute;
+    width: 350px;
+    height: 230px;
+    top: 55px;
+    left: 10px;
+}
+
+#pic_for_NSL
+{
+    position: absolute;
+    width: 270px;
+    left: 10%;
+    top: 12px;
+    user-select: none;
+}
+
+#name_for_NSL
+{
+    position: absolute;
+    top: 165px;
+    left: 2%;
+    user-select: none;
+}
+/* NSL完了 */
+
+/* WIIU */
+#bg_for_WIIU
+{
+    top: 1110px;
+}
+
+#info_for_WIIU
+{
+    position: absolute;
+    width: 350px;
+    height: 230px;
+    top: 55px;
+    left: 10px;
+}
+
+#pic_for_WIIU
+{
+    position: absolute;
+    width: 320px;
+    left: 5%;
+    top: 25px;
+    user-select: none;
+}
+
+#name_for_WIIU
+{
+    position: absolute;
+    top: 165px;
+    left: 34%;
+    user-select: none;
+}
+/* WIIU完了 */
+
+/* 3DSLL */
+#bg_for_3DSLL
+{
+    top: 1440px;
+}
+
+#info_for_3DSLL
+{
+    position: absolute;
+    width: 350px;
+    height: 230px;
+    top: 55px;
+    left: 10px;
+}
+
+#pic_for_3DSLL
+{
+    position: absolute;
+    width: 150px;
+    left: 26%;
+    top: 16px;
+    user-select: none;
+}
+
+#name_for_3DSLL
+{
+    position: absolute;
+    top: 165px;
+    left: 12%;
+    user-select: none;
+}
+/* 3DSLL完了 */
+/* 排版完了 */

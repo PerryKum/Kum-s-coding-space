@@ -1,0 +1,174 @@
+/* 这里是对每项列表中的内容进行设计的单独一张css */
+
+@font-face {
+    font-family: Nintendo_like;
+    src: url(/GS_newlocation/Nintendo/new_fonts/Nintendo_like.ttf);
+}
+
+/* 这里对class="game_area"格式进行统一规范 */
+.game_area
+{
+    position: absolute;
+    width: 67%;
+    height: 230px;
+    left: 29%;
+}
+/* 规范完了，只需对每个操作对象单独设置top属性即可(对NSL部分不适用，NSL有单独的组件体系) */
+
+/* 这里对按钮样式进行统一 */
+.btnleft
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 204, 0, 0.6);
+    left: -55px;
+    top: 100px;
+    user-select: none;
+}
+
+.btnright
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 204, 0, 0.6);
+    left: 1030px;
+    top: 100px;
+    user-select: none;
+}
+/* 统一完了 */
+
+.swiper-wrapper
+{
+    width: 100%;
+    height: 230px !important;
+}
+
+/* NSL */
+#game_area_for_NSL
+{
+    top: 835px;
+    width: 76% !important;
+    left: 24% !important;
+}
+
+#game_swiper_for_NSL
+{
+    width: 100%;
+    height: 230px;
+}
+
+.btn_for_Cassette
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 204, 0, 0.6);
+    left: -70px;
+    top: 165px;
+    font-size: 10px;
+    user-select: none;
+    z-index: 10;
+}
+
+#game_area_for_NSL_Cassette
+{
+    position: absolute;
+    width: 88.5%;
+    height: 230px;
+    left: 6.5%;
+}
+
+#game_swiper_for_NSL_Cassette
+{
+    width: 100%;
+    height: 230px;
+}
+
+.NSLgames_Cassette
+{
+    /* NS卡带盒长宽比为34:21 */
+    width: 126px !important;  /* 21*6 */
+    height: 204px !important;  /* 34*6 */
+    top: 12px;
+    user-select: none;
+}
+
+.btn_for_Digital
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 204, 0, 0.6);
+    left: -40px;
+    top: 165px;
+    font-size: 10px;
+    user-select: none;
+    z-index: 10;
+}
+
+#game_area_for_NSL_Digital
+{
+    position: absolute;
+    width: 88.5%;
+    height: 230px;
+    left: 6.5%;
+}
+
+#game_swiper_for_NSL_Digital
+{
+    width: 100%;
+    height: 230px;
+}
+
+.NSLgames_Digital
+{
+    /* 将NS数字版长宽比设定为1:1 */
+    width: 170px !important;
+    height: 170px !important;
+    top: 30px;
+    user-select: none;
+}
+
+/* WIIU */
+#game_area_for_WIIU
+{
+    top: 1165px;
+}
+
+#game_swiper_for_WIIU
+{
+    width: 100%;
+    height: 230px;
+}
+
+.WIIUgames
+{
+    /* WIIU卡带盒长宽比为45:32 */
+    width: 144px !important;  /* 32*4.5 */
+    height: 202.5px !important;  /* 45*4.5 */
+    top: 12px;
+    user-select: none;
+}
+
+/* 3DSLL */
+#game_area_for_3DSLL
+{
+    top: 1495px;
+}
+
+#game_swiper_for_3DSLL
+{
+    width: 100%;
+    height: 230px;
+}
+
+.N3DSgames
+{
+    /* 3DSLL卡带盒长宽比为1:1 */
+    width: 170px !important;
+    height: 170px !important;
+    top: 30px;
+    user-select: none;
+}

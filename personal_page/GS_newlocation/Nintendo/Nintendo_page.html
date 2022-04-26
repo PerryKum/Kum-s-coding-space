@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kum's Nintendo World</title>
+    <link rel="stylesheet" href="Nintendo_page.css"><!--对网页整体样式进行规划-->
+    <link rel="stylesheet" href="Nintendo_page_liststyle.css"><!--对列表部分进行单独规划，主要为游戏机信息及区域样式-->
+    <link rel="stylesheet" href="Nintendo_page_innerlist.css"><!--对每项列表中的内容进行规划，主要为游戏的轮播图-->
+    <link rel="stylesheet" href="/Swiper/swiper-bundle.min.css"><!--引入Swiper模块CSS-->
+</head>
+<body>
+    <div class="Welcome">
+        <img src="/GS_newlocation/Nintendo/pics/headbg.png" class="welcome_bg">
+        <div class="welcome_words">
+            <div class="word1">Welcome to</div>
+            <div class="word2">
+                <span><img src="/GS_newlocation/Nintendo/pics/head.jpg" class="word2_head"></span><!--换头像改此处src，记得与index.html同步-->
+                <span class="word2_name">Kum's</span>
+            </div>
+            <img src="/GS_newlocation/Nintendo/pics/Nintendo_logo.png" class="word3_logo">
+            <div class="word4">World !</div>
+        </div>
+    </div>
+    <!--内容列表-->
+    <!-- NSL -->
+    <div class="NSL">
+        <!-- 样式 -->
+        <div class="bg" id="bg_for_NSL">
+            <div class="bg_tpc">My First Handheld Console!</div>
+            <div class="bg_btm"><div class="bg_top"></div></div>
+            <div id="info_for_NSL">
+                <img src="/GS_newlocation/Nintendo/pics/items/NSL/NSL.png" id="pic_for_NSL">
+                <h1 id="name_for_NSL">Nintendo Switch Lite</h1>
+            </div>
+        </div>
+        <!-- 轮播 -->
+        <div class="game_area" id="game_area_for_NSL">
+            <button class="btn_for_Cassette" id="NSL_Cassette">C</button>
+            <button class="btn_for_Digital" id="NSL_Digital">D</button>
+            <div class="swiper" id="game_swiper_for_NSL">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="game_area_for_NSL_Cassette">
+                            <button class="btnleft" id="NSLCprev"><</button>
+                            <div class="swiper" id="game_swiper_for_NSL_Cassette">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide NSLgames_Cassette"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Cassette_Games/Pokemon_sword.png" class="NSLgames_Cassette"></div>
+                                    <div class="swiper-slide NSLgames_Cassette"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Cassette_Games/Gyakuten_Saiban.png" class="NSLgames_Cassette"></div>
+                                    <div class="swiper-slide NSLgames_Cassette"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Cassette_Games/Hades.png" class="NSLgames_Cassette"></div>
+                                    <div class="swiper-slide NSLgames_Cassette"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Cassette_Games/Mario_3d_World.png" class="NSLgames_Cassette"></div>
+                                    <div class="swiper-slide NSLgames_Cassette"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Cassette_Games/MHrise.png" class="NSLgames_Cassette"></div>
+                                    <div class="swiper-slide NSLgames_Cassette"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Cassette_Games/Kirby_discovery.png" class="NSLgames_Cassette"></div>
+                                    <div class="swiper-slide NSLgames_Cassette"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Cassette_Games/Pokemon_Arzeus.png" class="NSLgames_Cassette"></div>
+                                </div>
+                            </div>
+                            <button class="btnright" id="NSLCnext">></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="game_area_for_NSL_Digital">
+                            <button class="btnleft" id="NSLDprev"><</button>
+                            <div class="swiper" id="game_swiper_for_NSL_Digital">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide NSLgames_Digital"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Digital_Games/Cuphead.png" class="NSLgames_Digital"></div>
+                                    <div class="swiper-slide NSLgames_Digital"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Digital_Games/Darkest_Dungeon.png" class="NSLgames_Digital"></div>
+                                    <div class="swiper-slide NSLgames_Digital"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Digital_Games/Stardew_Valley.png" class="NSLgames_Digital"></div>
+                                    <div class="swiper-slide NSLgames_Digital"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Digital_Games/Hollow_Knight.png" class="NSLgames_Digital"></div>
+                                    <div class="swiper-slide NSLgames_Digital"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Digital_Games/Spongebob.png" class="NSLgames_Digital"></div>
+                                    <div class="swiper-slide NSLgames_Digital"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Digital_Games/Mario_Rabbits_Kingdom_Battle.png" class="NSLgames_Digital"></div>
+                                    <div class="swiper-slide NSLgames_Digital"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Digital_Games/Nine_Parchments.png" class="NSLgames_Digital"></div>
+                                    <div class="swiper-slide NSLgames_Digital"><img src="/GS_newlocation/Nintendo/pics/items/NSL/Digital_Games/The_Escapists.png" class="NSLgames_Digital"></div>
+                                </div>
+                            </div>
+                            <button class="btnright" id="NSLDnext">></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- WIIU -->
+    <div class="WIIU">
+        <!--样式-->
+        <div class="bg" id="bg_for_WIIU">
+            <div class="bg_tpc">Having been retired!</div>
+            <div class="bg_btm"><div class="bg_top"></div></div>
+            <div id="info_for_WIIU">
+                <img src="/GS_newlocation/Nintendo/pics/items/WIIU/WIIU.png" id="pic_for_WIIU">
+                <h1 id="name_for_WIIU">WII U</h1>
+            </div>
+        </div>
+        <!--轮播-->
+        <div class="game_area" id="game_area_for_WIIU">
+            <button class="btnleft" id="WIIUprev"><</button>
+            <div class="swiper" id="game_swiper_for_WIIU">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Mario_Kart_8.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Taiko.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Mario_Maker.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Bayoneta2.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Splatoon.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Captain_Kinopio.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Mario_3d_World.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Mario_Bros_U.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Issac.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Madden_NFL.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Super_Smash_Bros.png" class="WIIUgames"></div>
+                    <div class="swiper-slide WIIUgames"><img src="/GS_newlocation/Nintendo/pics/items/WIIU/Games/Zelda_BW.png" class="WIIUgames"></div>
+                </div>
+            </div>
+            <button class="btnright" id="WIIUnext">></button>
+        </div>
+    </div>
+    <!-- 3DSLL -->
+    <div class="3DSLL">
+        <!-- 样式 -->
+        <div class="bg" id="bg_for_3DSLL">
+            <div class="bg_tpc">YYDS!</div>
+            <div class="bg_btm"><div class="bg_top"></div></div>
+            <div id="info_for_3DSLL">
+                <img src="/GS_newlocation/Nintendo/pics/items/3DSLL/3DSLL.png" id="pic_for_3DSLL">
+                <h1 id="name_for_3DSLL">Nintendo 3DSLL</h1>
+            </div>
+        </div>
+        <!-- 轮播 -->
+        <div class="game_area" id="game_area_for_3DSLL">
+            <button class="btnleft" id="N3DSLLprev"><</button>
+            <div class="swiper" id="game_swiper_for_3DSLL">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Animal_Crossing.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Mario_Kart-7.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Luigi_Mansion.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Super_Mario_Maker_3DS.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Super_Mario_3d_Land.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/New_Super_Mario_Bros_2.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Mario_Tennis_Open.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Kirby_Extra_EpicYarn.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Kirby_Robot.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Kirby_triple.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Kirby_s_Blowout_Blast.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Kirby_Battle_Royale.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Pokemon_Maze.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Pokemon_ultra_red.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/PokemonX.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Pokemon_Ultra_Sun.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Pikachu.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Zelda_Tringle2.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Zelda_Majora_s_Mask.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Kinopio.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Hey_Pikmin.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Wario-Maker.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Super_Smash_Bros_3DS.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Fire_Emblem_Awakening.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Grand_Gyakuten_Saiban.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/MHXX.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/DOA.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Taiko.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Rhythm_Heaven.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Cooking_mama_5.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Russia_box.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Steam_World_Dig.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Madden_NFL.png" class="N3DSgames"></div>
+                    <div class="swiper-slide N3DSgames"><img src="/GS_newlocation/Nintendo/pics/items/3DSLL/Games/Need_For_Speed_16.png" class="N3DSgames"></div>
+                </div>
+            </div>
+            <button class="btnright" id="N3DSLLnext">></button>
+        </div>
+    </div>
+</body>
+<script src="/Swiper/swiper-bundle.min.js"></script><!--引入Swiper模块JS-->
+<script src="/GS_newlocation/Nintendo/Nintendo_page_innerlist.js"></script>
+</html>
